@@ -1,6 +1,6 @@
-# Welcome to the Iguazio MLOps Platform
+# Welcome to the Iguazio AI Platform
 
-An initial introduction to the Iguazio MLOps Platform and the platform tutorials
+An initial introduction to the Iguazio AI Platform and the platform tutorials
 
 - [Platform Overview](#platform-overview)
 - [Data Science Workflow](#data-science-workflow)
@@ -15,17 +15,32 @@ An initial introduction to the Iguazio MLOps Platform and the platform tutorials
 
 ## Platform Overview
 
-The Iguazio MLOps Platform (**"the platform"**) is a fully integrated and secure data science platform as a service (PaaS), which simplifies development, accelerates performance, facilitates collaboration, and addresses operational challenges.
+The Iguazio AI Platform (**"the platform"**) is a fully integrated and secure data science platform that powers operational and responsible (gen) AI pipelines.
 The platform incorporates the following components:
 
-- A data science workbench that includes Jupyter Notebook, integrated analytics engines, and Python packages. You can work with your favorite IDE (e.g. Pycharm, VScode, Jupyter, Colab, etc.). Read how to configure your client against the deployed MLRun server in [Setting Up your Environment](https://www.iguazio.com/docs/latest-release/intro/setup-env/).
-- The [MLRun](https://mlrun.readthedocs.io) open-source MLOps orchestration framework for ML model management with experiments tracking and pipeline automation
-- Managed data and machine-learning (ML) services over a scalable Kubernetes cluster.
-- A real-time serverless functions framework for model serving ([Nuclio](https://nuclio.io/)).
-- Integration with third-party data sources such as Amazon S3, HDFS, SQL databases, and streaming or messaging protocols.
-- Real-time dashboards based on Grafana.
+- **Data Management**: Ensure data quality through data ingestion, transformation, cleansing, versioning, tagging, 
+labeling, indexing and more.
+- **Development and CI/CD**: Train and customize LLMs and AI models with high-quality model fine-tuning, RAG, 
+RAFT & more. Validate and deploy with CI/CD for AI/ML.
+- **Deployment/Inference**: Bring business value to live applications through a real-time application 
+pipeline that handles requests, data, model and validations.
+- **Monitoring & LiveOps**: Continuously monitor AI applications to improve performance, address regulation needs, 
+remove PII, mitigate bias and more.
 
-<br><img src="./assets/images/igz-self-service-platform.png" alt="Self-service data science platform" width="650"/><br>
+<img src="/images/data-science-workflow.png" alt="Data science workflow" width="1000"/></a>
+
+The platform components/capabilities used to implement the workflow are:
+
+- A data science workbench that includes integrated analytics engines, and Python packages. You can work with your favorite 
+IDE (e.g. Pycharm, VScode, Jupyter, Colab, etc.). Read how to configure your client against the deployed MLRun server in 
+[Setting up your Environment](https://www.iguazio.com/docs/latest-release/intro/setup-env/).
+- The [MLRun](https://mlrun.readthedocs.io) open-source orchestration framework for simplified management of your continuous 
+ML and gen AI applications across their lifecycles
+- The [Nuclio](https://nuclio.io/) real-time serverless functions framework for model serving
+- Integration with third-party data sources such as Amazon S3, HDFS, SQL databases, and streaming or messaging protocols
+- Real-time dashboards based on Grafana
+
+<br><img src="/images/igz-self-service-platform.png" alt="Self-service data science {{< product lc >}}" width="650"/><br>
 
 <a id="data-science-workflow"></a>
 
@@ -34,11 +49,9 @@ The platform incorporates the following components:
 The platform provides a complete data science workflow in a single ready-to-use platform that includes all the required building blocks for creating data science applications from research to production:
 
 - Collect, explore, and label data from various real-time or offline sources
-- Run ML training and validation at scale over multiple CPUs and GPUs
+- Run gen AI and ML training and validation, at scale, over multiple CPUs and GPUs
 - Deploy models and applications into production with serverless functions
 - Log, monitor, and visualize all your data and services
-
-![Data Science Workflow](./assets/images/igz-data-science-workflow.gif)
 
 <a id="the-tutorial-notebooks"></a>
 
@@ -57,8 +70,6 @@ The home directory of the platform's running-user directory (**/User/&lt;running
 Start out by running the getting-started tutorial to familiarize yourself with the platform and experience firsthand some of its main capabilities.
 
 <a href="https://docs.mlrun.org/en/stable/tutorials/01-mlrun-basics.html"><img src="./assets/images/view-tutorial-button.png" alt="View tutorial"/></a>
-
-You can also view the tutorial on [GitHub](https://docs.mlrun.org/en/latest/tutorials/01-mlrun-basics.html).
 
 <a id="demos"></a>
 
@@ -95,7 +106,21 @@ For full usage instructions, run the script with the `-h` or `--help` flag:
     <th/>
     <th>Description</th>
     </tr>
-    <tr>
+     <tr>
+    <td style='min-width:45px;'>
+        <b><Call center</b>
+        </td>
+		<td align="center", style="min-width:45px; padding: 10px;">
+            <a target="_blank" href="https://github.com/mlrun/demo-call-center/blob/main/">
+                <img src="./assets/images/GitHub-Mark-32px.png"/><br>View on GitHub</a>
+        </td>
+        <td>This demo showcases how to use LLMs to turn audio files, from call center conversations between 
+		customers and agents, into valuable data &mdash; all in a single workflow orchestrated by MLRun.
+        MLRun automates the entire workflow, auto-scales resources as needed, and automatically logs and 
+		parses values between the different workflow steps.		
+        </td>
+    </tr>	
+	<tr>
         <td><b>Mask detection</b></td>
         <td align="center", style="min-width:45px; padding: 10px;">
             <a href="demos/mask-detection/README.md"><img src="./assets/images/Jupyter-Logo-32px.png"/><br>Open locally</a>
