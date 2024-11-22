@@ -47,7 +47,7 @@ The platform provides a complete data science workflow in a single ready-to-use 
 - Deploy models and applications into production with serverless functions
 - Log, monitor, and visualize all your data and services
 
-<br><img src="/images/data-science-workflow.png" alt="Data science workflow" width="700"/></a><br>
+<br><img src="/assets/images/data-science-workflow.png" alt="Data science workflow" width="700"/></a><br>
 
 <a id="the-tutorial-notebooks"></a>
 ## The Tutorial Notebooks
