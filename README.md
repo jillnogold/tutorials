@@ -147,21 +147,7 @@ For full usage instructions, run the script with the -h or --help flag:
 !/User/update-demos.sh --help
 ```
 
-## Installing and Updating the MLRun Python Package
 
-The demo applications and many of the platform tutorials use [MLRun](https://docs.mlrun.org) &mdash; Iguazio's end-to-end open-source MLOps solution for managing and automating your entire analytics and machine-learning life cycle, from data ingestion through model development to full pipeline deployment in production.
-MLRun is available in the platform via a default (pre-deployed) shared platform service (`mlrun`).
-However, to use MLRun from Python code (such as in the demo and tutorial notebooks), you also need to install the [MLRun Python package](https://docs.mlrun.org/) (`mlrun`).
-The version of the installed package must match the version of the platform's MLRun service and must be updated whenever the service's version is updated.
-
-The platform provides an [**align_mlrun.sh**](./align_mlrun.sh) script for simplifying the MLRun package installation and version synchronization with the MLRun service.
-The script is available in the running-user directory (your Jupyter home directory), which is accessible via the `/User` data mount.
-Use the following command to run this script for the initial package installation (after creating a new Jupyter Notebook service) and whenever the MLRun service is updated; (the command should be run for each Jupyter Notebook service):
-
-
-```python
-!/User/align_mlrun.sh
-```
 <table align="left">
     <table width='100%'>
 <table align="left">
@@ -221,7 +207,23 @@ Use the following command to run this script for the initial package installatio
 		It emphasizes the automation of ML workflows from development to production.
         </td>
     </tr>
-	</table>
+</table>
+
+## Installing and Updating the MLRun Python Package
+
+The demo applications and many of the platform tutorials use [MLRun](https://docs.mlrun.org) &mdash; Iguazio's end-to-end open-source MLOps solution for managing and automating your entire analytics and machine-learning life cycle, from data ingestion through model development to full pipeline deployment in production.
+MLRun is available in the platform via a default (pre-deployed) shared platform service (`mlrun`).
+However, to use MLRun from Python code (such as in the demo and tutorial notebooks), you also need to install the [MLRun Python package](https://docs.mlrun.org/) (`mlrun`).
+The version of the installed package must match the version of the platform's MLRun service and must be updated whenever the service's version is updated.
+
+The platform provides an [**align_mlrun.sh**](./align_mlrun.sh) script for simplifying the MLRun package installation and version synchronization with the MLRun service.
+The script is available in the running-user directory (your Jupyter home directory), which is accessible via the `/User` data mount.
+Use the following command to run this script for the initial package installation (after creating a new Jupyter Notebook service) and whenever the MLRun service is updated; (the command should be run for each Jupyter Notebook service):
+
+
+```python
+!/User/align_mlrun.sh
+```
 
 <a id="platform-resources"></a>
 
