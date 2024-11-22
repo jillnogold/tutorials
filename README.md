@@ -163,7 +163,15 @@ Use the following command to run this script for the initial package installatio
 !/User/align_mlrun.sh
 ```
 <table align="left">
-    <tr>
+    <table width='100%'>
+<table align="left">
+       <tr align="left" style="border-bottom: 1pt solid black;">
+    <th style="width:15%; vertical-align:'top'; font-weight:bold;">Demo</th>
+    <th style="width:15%; vertical-align:'top'; font-weight:bold;">Local</th>
+           <th style="width:15%; vertical-align:'top'; font-weight:bold;">Github</th>
+           <th style="width:85%; vertical-align:'top'; font-weight:bold;">Description</th>
+    </tr>
+	<tr>
         <td><b>Mask detection</b></td>
         <td align="center", style="min-width:45px; padding: 10px;">
             <a href="demos/mask-detection/README.md"><img src="./assets/images/Jupyter-Logo-32px.png"/><br>Open locally</a>
