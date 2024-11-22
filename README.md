@@ -127,7 +127,7 @@ tools to address data science requirements for different industries and implemen
             for building an interactive frontend.	
         </td>
     </tr>	
-    </table>
+</table>
 
 <a id="howto-demos"></a>
 ### ML Demos
