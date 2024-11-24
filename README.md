@@ -75,8 +75,7 @@ tools to address data science requirements for different industries and implemen
 
 ### Gen AI Demos
 
-<table width='100%'>
-<table align="left">
+<table width='100%' align="left"> 
     <tr align="left" style="border-bottom: 1pt solid black;">
     <th style="width:15%; vertical-align:'top'; font-weight:bold;">Demo</th>
     <th style="width:85%; vertical-align:'top'; font-weight:bold;">Description</th>
@@ -148,9 +147,7 @@ For full usage instructions, run the script with the -h or --help flag:
 ```
 
 
-<table align="left">
-    <table width='100%'>
-<table align="left">
+<table align="left" width='100%'>
        <tr align="left" style="border-bottom: 1pt solid black;">
     <th style="width:15%; vertical-align:'top'; font-weight:bold;">Demo</th>
     <th style="width:15%; vertical-align:'top'; font-weight:bold;">Local</th>
