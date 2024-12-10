@@ -103,7 +103,7 @@ tools to address data science requirements for different industries and implemen
     </tr>	
    	<tr>
     <td style='min-width:45px;'>
-        <b>	<a href="https://github.com/mlrun/demo-monitoring-and-feedback-loop/blob/main/README.md">Build & deploy custom (fine-tuned) LLM models and applications</a></b>
+        <b>	<a href="https://github.com/mlrun/demo-monitoring-and-feedback-loop/blob/main/README.md">Train, deploy, and monitor LLM using an approach called as LLM as a judge</a></b>
         </td>
         <td align="left" >This demo showcases how to train, deploy, and monitor LLM using an approach described as LLM 
             as a judge. It demo illustrates training an open-source model to answer banking-related questions only. 
